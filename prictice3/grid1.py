@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
 import prictice3.config
-
+# 测试
 for host, browser in prictice3.config.getconfig().items():
     print(host)
     print(browser)
