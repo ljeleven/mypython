@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../android/.idea/android.iml" filepath="$PROJECT_DIR$/../android/.idea/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../appium/.idea/appium.iml" filepath="$PROJECT_DIR$/../appium/.idea/appium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/framework.iml" filepath="$PROJECT_DIR$/.idea/framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../practice4/.idea/practice4.iml" filepath="$PROJECT_DIR$/../practice4/.idea/practice4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pytest2/.idea/pytest2.iml" filepath="$PROJECT_DIR$/../pytest2/.idea/pytest2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pytesttest/.idea/pytesttest.iml" filepath="$PROJECT_DIR$/../pytesttest/.idea/pytesttest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../robottest/.idea/robottest.iml" filepath="$PROJECT_DIR$/../robottest/.idea/robottest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../untitled/.idea/untitled.iml" filepath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" />
+    </modules>
+  </component>
+</project>
