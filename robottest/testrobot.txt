@@ -1,0 +1,12 @@
+****** settings ***
+Library    Selenium2Library
+
+
+*** test cases ***
+登录测试
+    Open Browser    https://www.baidu.com    chrome
+    Maximize Browser Window
+    Input Text    id=kw    selenium
+    Click Button    id=su
+    sleep    5
+    Close Browser

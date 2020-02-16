@@ -1,0 +1,81 @@
+*** Settings ***
+Suite Setup       Log    开始
+Suite Teardown    Log    结束
+Library           Selenium2Library
+Resource          测试元素层.robot
+Resource          测试流程层.robot
+Library           ExcelLibrary
+
+*** Test Cases ***
+baidu_search_1
+    [Tags]    search
+    [Setup]    Run KeyWord    Ukey
+    Input Text    id=kw    长安十二时辰
+    content
+    Click Button    id=su
+    sleep    5
+    Capture Page Screenshot
+    ${title}    Get Title
+    Should Contain    ${title}    长安十二时辰
+    sleep    2
+
+search2
+    Input Text    id=kw    自动化测试框架
+    Click Button    id=su
+    sleep    5
+    [Teardown]    Close Browser
+
+测试百度搜索
+    测试流程    https://www.baidu.com
+
+数据库练习
+    连接数据库
+    查询所有数据
+    数据库新增数据    23    23
+    查询所有数据
+    删除数据    23
+    查询所有数据
+    关闭数据库
+
+list练习
+    @{words}    Set Variable    性能测试    功能测试    接口测试    压力测试    负载测试
+    Log    jjj @{words}
+    : FOR    ${w}    IN    @{words}
+    \    Log    ${w}
+    \    Log    ggg
+
+获取当前时间
+    ${time}    Get Time
+
+if练习
+    ${a}    Set Variable    4
+    ${e}    Set Variable    5
+    Run Keyword If    ${a} > ${e}    Log    1
+    ...    ELSE IF    ${a} < ${e}    Log    2
+    ...    ELSE    Log    3
+
+scalrlistdicr
+    #字典
+    ${a1}    Create Dictionary    a=1    b=2
+    ${b1}    Create Dictionary    c    3    d    4
+    #list
+    ${c1}    Create List    12    3    4
+    @{c2}    Create List    34    5    6
+    #scalr
+    ${d1}    Set Variable    robot
+
+exceltest
+    Open Excel    C:/Users/lj/Desktop/Book1.xls
+    ${a}    Get Row Values    Sheet1    2
+    ${b}    Get Column Values    Sheet1    1
+    ${c}    Get Row Count    Sheet1
+    Log    ${a[1][1]}
+    Add New Sheet    test
+    Put String To Cell    Sheet1    0    0    hhhhh
+    Save Excel Current Directory    book1.xls
+    ${name}    Get Sheet Names
+    Create Excel Workbook    test2
+    Put Number To Cell    Sheet1    0    0    12
+    Save Excel    Book1.xls
+
+*** Keywords ***

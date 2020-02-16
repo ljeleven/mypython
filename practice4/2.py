@@ -1,0 +1,12 @@
+#__author:"longjin"
+#date:  2019/6/30
+# -*- coding: UTF-8 -*-
+
+L = [
+    ['Apple', 'Google', 'Microsoft'],
+    ['Java', 'Python', 'Ruby', 'PHP'],
+    ['Adam', 'Bart', 'Lisa']
+]
+print(L[0][0])
+print(L[1][1])
+print(L[2][2])
