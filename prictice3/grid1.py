@@ -16,7 +16,7 @@ for host, browser in prictice3.config.getconfig().items():
                               'vwesion':'',
                               'javascriptEnabled':True
                               }
-    )
+    )#通过selenium grid执行
 # for host,browser in prictice3.config.getconfig().items():
 #     print(host)
 #     print(browser)
