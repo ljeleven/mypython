@@ -1,7 +1,7 @@
 #__author:"longjin"
 #date:  2020/3/29
 # -*- coding: UTF-8 -*-
-#未使用common类----------------------------------------------
+#未使用common类-----------------------------------------------
 # import requests
 # url_login = 'http://127.0.0.1:12356/login'
 # username = 'criss'
@@ -9,9 +9,9 @@
 # payload = 'username='+ username + '&password=' + password
 # response_login = requests.post(url_login, data=payload)
 # print('response内容： ' + response_login.text)
-#-------------------------------------------------------------
+#--------------------------------------------------------------
 
-#使用common类-------------------------------------------------
+#使用common类--------------------------------------------------
 from postman import common
 comm = common.Common()
 uri = '/login'
