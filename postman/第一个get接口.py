@@ -10,7 +10,7 @@
 
 #使用common类--------------------------------------
 from postman import common
-comm = common.Common()
+comm = common.Common('http://127.0.0.1:12356/')
 uri = '/'
 res = comm.get(uri)
 print(res.text)

@@ -4,7 +4,7 @@
 
 from postman import common
 
-comm = common.Common('http://127.0.0.1:12356/')
+comm = common.Common('http://127.0.0.1:12356')
 uri = '/selectEq'
 equipmentid = '10001'
 payload = "equipmentid=" + equipmentid

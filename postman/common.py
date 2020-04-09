@@ -5,8 +5,8 @@
 import requests
 
 class Common(object):
-    def __init__(self):
-        self.url_root = 'http://127.0.0.1:12356'
+    def __init__(self, url_root):
+        self.url_root = url_root
 
     def get(self, uri, params=''):
         url = self.url_root + uri + params
